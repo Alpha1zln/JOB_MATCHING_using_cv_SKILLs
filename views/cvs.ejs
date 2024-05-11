@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CVs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Matching CVs</h1>
+  <% cvs.forEach(cv => { %>
+    <div class="cv">
+      <h2><%= cv.name %></h2>
+      <p>Email: <%= cv.email %></p>
+      <p>Skills: <%= cv.skills.join(', ') %></p>
+      <img src="data:<%= cv.photo.contentType %>;base64,<%= cv.photo.data.toString('base64') %>" alt="CV Photo">
+    </div>
+  <% }) %>
+</body>
+</html>
