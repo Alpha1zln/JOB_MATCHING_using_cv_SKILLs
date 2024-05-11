@@ -1,0 +1,9 @@
+output - 
+used mongodb, express, node js
+
+Job matching site - 
+  - cv and details upload based on skill
+  - search on the basis of cv
+  - nav, header, footer added 
+  - searching working, adding details submit page working
+  - login, page need work
